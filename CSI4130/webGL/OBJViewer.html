@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>OBJ Mesh Viewer</title>
+  </head>
+  
+  <body alink="#ff0000" bgcolor="#175d7e" link="#33ccff" text="#cccccc"
+	vlink="#ccffff" onload="main()">
+    <h1>OBJ Mesh Viewer</h1>
+    <P>
+      The code is heavily based on
+      the <span style="text-decoration: underline;font-weight:bold;">
+	<font color="#ff0000">WebGL Programming
+     Guide</font></b></span> by <span style="text-decoration:
+     underline;font-weight: bold;">Kouichi Matsuda and Rodger
+     Lea</span>. You can find more information about the book and the
+     source code on their <span style="font-weight: bold;">
+     <A href="https://sites.google.com/site/webglbook/">webpage</A></span>. The
+     code posted here is with the generours permission by the authors.
+    </P>
+
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+    <hr width="100%">     
+    <table>
+      <tbody>
+	<tr>
+	  <td style="text-align:center"  colspan="3">
+	    Use a/w/s/d keys to rotate light source or model.
+	  </td>
+	</tr>
+	<tr>
+	  <td style="text-align:left; border-bottom: thin solid;" colspan="3">
+	    Check box for   
+	    <label for="objectControl"><input name="objectControl" id="objectControl" type="checkbox" onchange="switchObjectLightControl(this);">object control</label>
+	    (unchecked is light source control)
+	  </td>
+	</tr>
+	<tr align="left">
+	  <td style="text-align:left; border-bottom: thin solid;">
+	    <label for="animate_cb"><input name="animate_cb" id="animate_cb" type="checkbox" onchange="handleAnimationChange(this);" checked="checked">Animation</label>
+	  </td>
+	  <td style="border-bottom: thin solid;">
+	    <button type="button" onclick="slower()">slower</button>
+	  </td>
+	  <td style="border-bottom: thin solid;">
+	    <button type="button" onclick="faster()">faster</button>
+	  </td>
+	</tr>
+	<tr>
+	  <td style="text-align:left">
+	    Use +/- keys for zooming or
+	  <td>
+	    <button type="button" onclick="zoom( 1.41 )">- zoom</button>
+	  </td>
+	  <td>
+	    <button type="button" onclick="zoom( 1/1.41 )">+ zoom</button>
+	  </td>
+	</tr>
+	<tr>
+	  <td style="border-top: thin solid;" align="center" colspan="3">
+	    <button type="button" onclick="setDefault()">reset</button>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <script>
+      var FRAGMENT_SHADER = 'shader/diffuse.fs';
+      var OBJ_FILENAME = 'mesh/tiger.obj';
+    </script>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="OBJLoader.js"></script>
+    <script src="OBJDraw.js"></script>
+    <script src="OBJViewer.js"></script>
+</P>
+<P>
+  <hr width="100%"> 
+</br>
+<A HREF="../demoCode.html">Back to demoCode</A>
+</br>
+&copy; <a href="../../index.html">Jochen Lang</a> 
+</body>
+</html>
+</P>
+  </body>
+</html>

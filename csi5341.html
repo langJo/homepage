@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Jochen Lang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<style>
+  body {
+    padding-top: 160px;
+  }
+
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  p.max-text-width {
+    max-width: 640px;
+  }
+
+  .navbar-second {
+    margin-top: 70px;
+    z-index: 1000;
+  }
+
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+  }
+</style>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="img/jochen.png" alt="Logo" style="width:40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleMainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="collapsibleMainNavbar">
+      <ul class="navbar-nav mx-auto navbar-dark">
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+          </a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="https://uniweb.uottawa.ca/members/206">Short CV</a>
+        </li>
+        <li class="nav-item active dropdown px-lg-4">
+          <a class="nav-link dropdown-toggle text-uppercase text-expanded" id="navbardrop"
+            data-toggle="dropdown">Teaching
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="teaching.html">Overview</a>
+            <a class="dropdown-item" href="csi4130.html">CSI4130</a>
+            <a class="dropdown-item active" href="csi5341.html">CSI5341</a>
+          </div>
+        </li>
+        <li class="nav-item active dropdown px-lg-4">
+          <a class="nav-link dropdown-toggle text-uppercase text-expanded" id="navbardrop" data-toggle="dropdown">CSI Graduate Programs (internal)
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="mcsprojects/postings.html">CSI6900 MCS Project Links</a>
+            <a class="dropdown-item" href="procedures/csi9901_02.pdf">CSI9901/9902 Seminars</a>
+            <a class="dropdown-item" href="procedures/csi9998.pdf">CSI9998 Comprehensive</a>
+            <a class="dropdown-item" href="procedures/csi9997.pdf">CSI9997 Proposal</a>
+          </div>
+        </li>   
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="research.html">Research</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase text-expanded"
+            href="https://scholar.google.ca/citations?user=jXwPkbcAAAAJ&hl=en">Publications</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-second fixed-top navbar-expand-sm bg-light navbar-light">
+    <a class="navbar-brand" href="#">CSI5341</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsiblePageNavbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="collapsiblePageNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" href="#professor">Personnel</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" href="#description">Description</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" href="#topics">Topics</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" href="#evaluation">Evaluation</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container bg-primary p-md-3 mb-4 rounded">
+    <div class="container">
+      <h2 class="text-white">Learning-based Computer Vision</h2>
+    </div>
+  </div>
+
+  <a class=anchor id="professor"></a>
+  <div class="container bg-primary p-md-3 mb-4 rounded">
+    <div class="container ">
+      <h3 class="text-white">Professor</h3>
+      <div class="card-deck">
+        <div class="card">
+          <h4 class="card-title">Jochen Lang</h4>
+          <h6>Contact</h6>
+          <div class="card-body">
+            <ul class="fa-ul" itemscope>
+              <li>
+                <i class="fa-li fa fa-envelope" aria-hidden="true"></i>
+                <span id="person-email" itemprop="email"><a href="mailto:jlang@uottawa.ca">jlang@uottawa.ca</a></span>
+              </li>
+              <li>
+                <i class="fa-li fa fa-support" aria-hidden="true"></i>
+                <span id="person-office-hours">Office hours: Tuesdays 11:30-12:30</span>
+              </li>
+              <li>
+                <i class="fa-li fa fa-map-marker" aria-hidden="true"></i>
+                <span id="person-address" itemprop="address">Office: STE-5098</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container ">
+     <h3 class="text-white">Corrector</h3> 
+      <div class="row">
+        <div class="col-md-8 col-lg-10 col-xl-12">
+        <div class="card mb-3"> 
+    	<h4 class="card-title">Niloofar Hooshyaripour</h4>
+    	<h6>Contact</h6>
+    	<div class="card-body">
+    	  <ul class="fa-ul" itemscope>
+    	    <li>
+    	      <i class="fa-li fa fa-envelope" aria-hidden="true"></i>
+    	      <span id="person-email" itemprop="email"><a href="mailto:nhoos082@uottawa.ca">nhoos082@uottawa.ca</a></span>
+    	    </li>
+    	    <li>
+    	      <i class="fa-li fa fa-support" aria-hidden="true"></i>
+    	      <span id="person-office-hours">Office hours: tbd</span>
+    	    </li>
+    	    <li>
+    	      <i class="fa-li fa fa-map-marker" aria-hidden="true"></i>
+    	      <span id="person-address" itemprop="address">Office: tbd
+    	    </li>
+    	    <li>
+    	      <i class="fa-li fa fa-wrench" aria-hidden="true"></i>
+    	      <span id="person-tasks" itemprop="">Tasks: Help withs projects and assignments, marking projects and assignments
+    	    </li>
+    	  </ul>
+    	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class=anchor id="description"></a>
+  <div class="container shadow bg-light p-3 mb-4 rounded">
+    <div class="container">
+      <h4>General and Specific Objectives of the Course</H4>
+      <p>The recent surge in machine learning and in particular deep learning using neural network has revolutionized
+        many fields including language processing, data processing and medicine. Arguably one of the greatest impacts of this
+        revolution is in computer vision. Since the success of AlexNet at the 2012 ImageNet Large Scale Visual
+        Recognition Challenge (ILSVRC) where the deep neural network solution outperformed, by a significant margin,
+        arguably much more advanced classical computer vision systems, deep neural networks can now be found everywhere
+        in visual processing. This revolution has created enormous economic interest.
+        The OCICS offering contains various courses that cover neural networks from a machine learning or data mining
+        perspective but there is no dedicated course of machine learning in computer vision. This course is to fill this
+        gap. While it necessarily includes machine learning background, it specifically looks at neural networks and
+        their applications to standard problems in computer vision. It will also contrast the deep-learning based
+        approaches to classical computer vision approaches and how classical approaches inform the design of these
+        deep-learning based solutions.
+      </p>
+      <hr>
+      <h4>Calendar Description</h4>
+      <p>Introduction to learning-based computer vision; statistical learning background; image processing and filtering
+        primer; convolutional neural networks (CNNs), network layers, computer vision data sets and competitions;
+        computer vision problems, in particular, image classification, detection and recognition, semantic segmentation,
+        image generation, multi-view problems and tracking.
+      </p>
+      <h6>Course Prerequisites: None</h6>
+      <!-- <p> See the official descripton in the University of Ottawa <A HREF="http://www.uottawa.ca/academic/info/regist/calendars/courses/CSI.html#CSI2372">calendar</A>. -->
+      <!-- </p> -->
+      <hr>
+      <h4>Teaching Methods and Student Expectations</h4>
+      <!-- <p> The course covers the fundamentals of deep neural networks in computer vision in lectures using multimedia support including program demonstrations and videos. The fundamentals are reviewed in the final exam. The active participation of students is encouraged through discussions and the student project presentations at the end of the course. The students are encouraged to apply their knowledge through three programming assignments.
+      </p> -->
+      <p> The course material will be delivered in-person. Additional resources in form of textbooks and on-line references are listed below. The
+        course will be using group work and interactive student feedback using Virtual Campus (Brightspace) and
+        Microsoft Teams. Students are encouraged to apply their knowledge through three programming assignments in
+        Jupyter notebooks using Scikit-Learn, Keras and PyTorch. Participation in the course requires approriate
+        access to resources. The active participation of students is encouraged through discussions, a video
+        presentation and an in-person project presentations.
+      </p>
+      <hr>
+      <h4>Recommended Textbooks and Additional Resources</h4>
+      <ul>
+        <li>Computer vision</li>
+        <ul>
+          <li>Antonio Torralba, Phillip Isola, and William T. Freeman, Foundations of Computer Vision, MIT Press, 2024. List price $ 119.00
+            <p>(Pre-print
+              available on-line: <a href="https://visionbook.mit.edu/">https://visionbook.mit.edu</a>)
+            </p>
+          </li>
+          <li>Richard Szeliski, Computer Vision: Algorithms and Applications, Springer, 2nd ed., 2022. List price US $ 79.99
+            <p>(Pre-print
+              available on-line: <a href="http://szeliski.org/Book/">http://szeliski.org/Book</a>)
+            </p>
+          </li>
+          <li>Reinhard Klette, Concise Computer Vision: An Introduction into Theory and
+            Algorithms, Springer, 2014. List price $ 83.50
+            <p>(Electronic version available for download from library
+              <a href="http://biblio.uottawa.ca/en">http://biblio.uottawa.ca/en</a>)
+            </p>
+          </li>
+        </ul>
+        <li> General statistical learning</li>
+        <ul>
+          <li>Trevor Hastie, Robert Tibshirani and Jerome Friedman, The Elements of Statistical Learning: Data Mining,
+            Inference, and Prediction,
+            Springer 2nd ed., 2009. List price $ 132
+            <p>(Available on-line: <a
+                href="http://web.stanford.edu/~hastie/ElemStatLearn/">http://web.stanford.edu/~hastie/ElemStatLearn/</a>
+            </p>
+          </li>
+        </ul>
+        <li>Deep Learning</li>
+        <ul>
+          <li>Ian Goodfellow, Yoshua Bengio and Aaron Courville, Deep Learning, MIT Press 2016. List price $ 131.00
+            <p>(Available on-line:<a href="http://www.deeplearningbook.org/">http://www.deeplearningbook.org</a>)</p>
+          </li>
+          <li>Aurélion Gérion, Hands-on machine learning with Scikit-Learn and PyTorch, O’Reilly Media
+            Inc., 2025. List price $ 124.60
+            <p>(Jupyter notebooks can be found at
+              <a href="https://github.com/ageron/handson-mlp">https://github.com/ageron/handson-mlp</a> ).
+            </p>
+          </li>
+          <li>Fei-Fei Li et al., Stanford CS231n course notes
+            <p>(Available from <a href="http://cs231n.github.io/">http://cs231n.github.io</a>)
+            </p>
+          </li>
+          <li>Michel Nielsen, Neural Networks and Deep Learning
+            <p>
+              (Free online book from <a
+                href="http://neuralnetworksanddeeplearning.com">http://neuralnetworksanddeeplearning.com/</a>)
+            </p>
+          </li>
+        </ul>
+      </ul>
+      <hr>
+      <a class=anchor id="topics"></a>
+      <h4>Course Topics and Readings</h4>
+      <p>Course notes will be made available through Virtual Campus.</p>
+      <ul>
+        <li>Introduction and course overview, review of hands-on machine learning
+          <p>Machine learning landscape, data handling, linear least squares, logistic regression
+        </li>
+        <li>Neural networks basics, non-linear optimization
+          <p>Multi-layer perceptron, feed forward networks, activation functions, loss function, and training by back
+            propagation. Gradient descent and stochastic gradient descent</p>
+        </li>
+        <li>Image processing and filtering (self-study)
+          <p>Correlation, convolution and linear filters</p>
+        </li>
+        <li>Convolutional neural networks (CNNs) “Classic layers”
+          <p>Convolutional, pooling and fully-connected layers, visualizing CNNs</p>
+        </li>
+        <li>Training CNNs
+          <p>Initialization, transfer learning, data augmentation, regularization, dropout, mini-batch normalization,
+            data sets and competitions</p>
+        </li>
+        <li>CNN Architectures for image classification and object detection
+          <p>Metrics, ImageNet competitions, CNN architectures</p>
+        </li>
+        <li>Transformer architectures for computer vision
+          <p>Vanilla transformer: attention, positional encoding and normalization. Image transformer, DETR, ViT, Swin
+            transformer.</p>
+        </li>
+        <li>Segmentation 
+          <p>Benchmarks and metrics, architectures, use of attention.</p>
+        </li>
+        <!-- <li>Object detection
+          <p>Benchmarks and metrics, hourglass networks, cascade design, attention layers and multi-task networks.
+            Applications as face detector, people detector and pedestrian detector.</p>
+        </li> -->
+        <li>Computer vision foundation models
+          <p>Overview of visual understanding and generation, unified vision models, large multimodal models, example architectures</p>
+        </li>
+        <li>Multiview problems
+          <p>Problem description for stereo and optical flow, geometric constraints and brief overview of classical
+            methods, metrics.</p>
+        </li>
+        <li>Learning-based stereo and optical flow
+          <p>Network designs for pixelwise classification and regression. Supervised and unsupervised training. Loss
+            functions, occlusion handling.</p>
+        </li>
+        <!-- <li>Tracking
+          <p>Tracking by detection, discriminative and generative models, part-based trackers, discriminative
+            correlation filters, siamese networks, short-term and long-term tracking, multi-object tracking, on-line
+            tracking and real-time tracking, video object segmentation.
+          </p>
+        </li> -->
+        <li>Image generation and translation
+          <p>Image generation, image-to-image translation and style transfer. Variational autoencoders (VAE) and
+            generative adversarial networks (GAN), diffusion models</p>
+      </ul>
+    </div>
+  </div>
+
+  <a class=anchor id="evaluation"></a>
+  <div class="container shadow bg-light p-3 mb-4 rounded">
+    <div class="container">
+      <h3>Student Evaluation</h3>
+      <p>Student evaluation will be based on assignments and a project.
+      </p>
+      <h4>Marking Scheme</h4>
+      <p>The maximum is 100 marks*) with the following breakdown: </p>
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td>3 Programming assignments (using PyTorch, Jupyter notebooks)
+              <ul>
+                <li>Image recognition</li>
+                <li>Transfer learning for small data-sets</li>
+                <li>Vision transformers</li>
+              </ul>
+            </td>
+            <td>30 marks</td>
+          </tr>
+          <tr>
+            <td>Project including oral presentation
+              <p>Project must be done in groups of 2. Two presentations are required. Marked in stages: topic, background presentation, proposal, final presentation and report.
+              </p>
+            </td>
+            <td>40 marks</td>
+          </tr>
+          <tr>
+            <td>Final Exam
+              <p>Closed book.</p>
+            </td>
+            <td>30 marks</td>
+          </tr>
+        </tbody>
+      </table>
+      Please see the Brightspace calendar for the tentative schedule. The final exam will be scheduled by the university and the information will become available in uoZone later in the term.
+      <hr>
+      <h4>Reminder: Academic Regulations</h4>
+      <!--    <p>Class attendance is mandatory. As per academic regulations,
+    students who do not attend 80% of the class may not be allowed to
+    write the final examinations.</p> -->
+      <p>All components of the course (i.e.
+        assignments, projects, etc.) must be fulfilled otherwise students may receive
+        an INC as a final mark (equivalent to an F). This also holds for
+        a student who is taking the course for the second time.
+      </p>
+      <hr>
+      <h4>Academic Integrity and Misconduct</h4>
+      <p>
+        For any plagiarism or fraud the university <a
+          href="https://www.uottawa.ca/about-us/leadership-governance/policies-regulations/a-4-academic-integrity-academic-misconduct">regulation
+          on academic integrity and misconduct</a> applies. A website explains the rules surrounding <a
+          href="https://www.uottawa.ca/study/academic-integrity">academic
+          integrity</a> and the use of AI. Please familiarize yourself with them.
+      </p>
+      <p>AI policy: You must disclose the AI tool used and ask permission (exception spell checking tools). Follow the university policy:
+“Cite the specific tool as a source and explain how it was used in the work.”
+</p>
+      <hr>
+      <h4>Bilingualism</h4>
+      <p>
+        See the academic regulation A-1: <p><em>"Except in programs and courses for which language is a requirement, all students have the right to produce their written work and to answer examination questions in the official language of their choice, regardless of the course’s language of instruction"</em></p>.
+      </p>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center bg-secondary text-white p-3">
+    <p class="small"><i class="fa fa-copyright"></i> Jochen Lang</p>
+    <p class="small">These individual webpages are only for information purposes, consult the official University of
+      Ottawa sources regarding any academic rules or regulations. I am not responsible and I do not assume any liability
+      whatsoever for any of the linked websites, interpretation, comments or opinions expressed in any of the linked
+      websites.</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jochen Lang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+  padding-top: 160px;
+}
+.navbar {
+  margin-bottom: 20px;
+}
+p.max-text-width {
+    max-width: 640px;
+}
+.navbar-second {
+    margin-top: 70px;
+    z-index: 1000;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+}
+
+</style>
+<body>
+ 
+<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="index.html">
+    <img src="img/jochen.png" alt="Logo" style="width:40px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleMainNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Navbar Links -->
+  <div class="collapse navbar-collapse" id="collapsibleMainNavbar">
+  <ul class="navbar-nav mx-auto navbar-dark">
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+      </a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="https://uniweb.uottawa.ca/members/206">Short CV</a>
+    </li>
+    <li class="nav-item active dropdown px-lg-4">
+      <a class="nav-link dropdown-toggle text-uppercase text-expanded" id="navbardrop" data-toggle="dropdown">Teaching
+      </a>
+      <div class="dropdown-menu">
+	<a class="dropdown-item" href="teaching.html">Overview</a>
+      <a class="dropdown-item active" href="csi4130.html">CSI4130</a>
+      <a class="dropdown-item" href="csi5341.html">CSI5341</a>
+       </div>
+    </li>
+    <li class="nav-item active dropdown px-lg-4">
+      <a class="nav-link dropdown-toggle text-uppercase text-expanded" id="navbardrop" data-toggle="dropdown">CSI Graduate Programs (internal)
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="mcsprojects/postings.html">CSI6900 MCS Project Links</a>
+        <a class="dropdown-item" href="procedures/csi9901_02.pdf">CSI9901/9902 Seminars</a>
+        <a class="dropdown-item" href="procedures/csi9998.pdf">CSI9998 Comprehensive</a>
+        <a class="dropdown-item" href="procedures/csi9997.pdf">CSI9997 Proposal</a>
+      </div>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="research.html">Research</a>
+    </li>		
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="https://scholar.google.ca/citations?user=jXwPkbcAAAAJ&hl=en">Publications</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-second fixed-top navbar-expand-sm bg-light navbar-light">
+  <a class="navbar-brand" href="#">CSI4130</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsiblePageNavbar"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="collapsiblePageNavbar">
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item px-lg-4">
+      <a class="nav-link" href="#professor">Personnel</a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link" href="#description">Description</a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link" href="#evaluation">Evaluation</a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link" href="CSI4130/topics.html">Topics</a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link" href="CSI4130/demoCode.html">Demo</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+
+<div class="container bg-primary p-md-3 mb-4 rounded">
+  <div class="container">
+    <h2 class="text-white">Computer Graphics Winter 2026</h2> 
+	</div>
+</div>
+
+<a class=anchor id="professor"></a>
+<div class="container bg-primary p-md-3 mb-4 rounded">
+  <div class="container ">
+    <h3 class="text-white">Professor</h3> 
+    <div class="card-deck">
+      <div class="card"> 
+	<h4 class="card-title">Jochen Lang</h4>
+	<h6>Contact</h6>
+	<div class="card-body">
+	  <ul class="fa-ul" itemscope>
+	    <li>
+	      <i class="fa-li fa fa-envelope" aria-hidden="true"></i>
+	      <span id="person-email" itemprop="email"><a href="mailto:jlang@uottawa.ca">jlang@uottawa.ca</a></span>
+	    </li>
+	    <li>
+	      <i class="fa-li fa fa-support" aria-hidden="true"></i>
+	      <span id="person-office-hours">Office hours: Mondays 11:30-12:30</span>
+	    </li>
+	    <li>
+	      <i class="fa-li fa fa-map-marker" aria-hidden="true"></i>
+	      <span id="person-address" itemprop="address">Office: STE 5098 or Microsoft Teams</span>
+	    </li>
+	  </ul>
+	</div>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <h3 class="text-white">Teaching Assistants</h3> 
+	<div class="card-deck">
+    <div class="row">
+                <div class="col-md-6 col-lg-6 col-xl-6"> 
+	<div class="card mb-3"> 
+	<h4 class="card-title">Zishen Chen</h4>
+	<h6>Contact</h6>
+	<div class="card-body">
+	  <ul class="fa-ul" itemscope>
+	    <li>
+	      <i class="fa-li fa fa-envelope" aria-hidden="true"></i>
+	      <span id="person-email" itemprop="email"><a href="mailto:zchen314@uottawa.ca">zchen314@uottawa.ca</a></span>
+	    </li>
+	    <li>
+	      <i class="fa-li fa fa-support" aria-hidden="true"></i>
+	      <span id="person-office-hours">Office hours: Tuesdays, 13:00-14:00 (tbc)</span>
+	    </li>
+	    <li>
+	      <i class="fa-li fa fa-map-marker" aria-hidden="true"></i>
+	      <span id="person-address" itemprop="address">Office: Microsoft Teams</span>
+	    </li>
+	    <li>
+	      <i class="fa-li fa fa-wrench" aria-hidden="true"></i>
+	      <span id="person-tasks" itemprop="">Tasks: Laboratory, office hours, marking assignments
+	    </li>
+	  </ul>
+	</div>
+    </div>
+	</div> 
+	<div class="col-md-6 col-lg-6 col-xl-6">	     
+    <div class="card mb-3"> 
+    <h4 class="card-title">Ajay Samuel Victor</h4>
+    <h6>Contact</h6>
+    <div class="card-body">
+      <ul class="fa-ul" itemscope>
+        <li>
+          <i class="fa-li fa fa-envelope" aria-hidden="true"></i>
+          <span id="person-email" itemprop="email"><a href="mailto:avict019@uottawa.ca">avict019@uottawa.ca</a></span>
+        </li>
+        <li>
+          <i class="fa-li fa fa-support" aria-hidden="true"></i>
+          <span id="person-office-hours">Office hours: as needed</span>
+        </li>
+        <li>
+          <i class="fa-li fa fa-map-marker" aria-hidden="true"></i>
+          <span id="person-address" itemprop="address">Office: Microsoft Teams</span>
+        </li>
+        <li>
+          <i class="fa-li fa fa-wrench" aria-hidden="true"></i>
+          <span id="person-tasks" itemprop="">Tasks: Laboratory, office hours, marking assignments
+        </li>
+      </ul>
+    </div>
+        </div>
+        </div> 
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<a class=anchor id="description"></a>
+<div class="container shadow bg-light p-3 mb-4 rounded">
+  <div class="container">
+    <h4>General and Specific Objectives of the Course and Learning Outcomes</H4>
+    <p> Study the fundamental concepts of 3D computer graphics indepedent of rendering approach and graphics API. Gain a precise understanding of the rasterization pipeline that formes the basis of most rendering approaches today. Apply the knowledge both through a higher-level API and a low-level API. Students will gain enough applied knowledge to readily add 3D content to various applications and they will gain the fundamentals to study more advanced concepts in the future.
+    </p>
+    <hr>
+    <h4>Calendar Description</h4>
+    <p>Interactive computer graphics. Display data structures and procedures. Graphics pipeline. Geometric transformations. Viewing in three dimensions. Illumination and color models. Object modelling in 2D and 3D.</p>
+    <h6>Course Prerequisites: MAT1341, 9 course units in computer science (CSI) or software engineering (SEG) at the 3000 or 4000 level.</h6>
+    <p> See the official descripton in the University of Ottawa <A HREF="https://catalogue.uottawa.ca/en/search/?search=CSI+4130&fscaturl=%2Fen%2F&gscaturl=%2Fen%2F">calendar</A>.
+    </p>
+    <hr>
+    <h4>Teaching Methods and Student Expectations</h4>
+    <p> The course material will be covered in in-person lectures, labs and tutorials, as well as asynchronous course material. Additional resources in form of textbooks and on-line references are listed below. Attendance of and participation in lectures and labs is mandatory. The course will be using group work and interactive student feedback using Virtual Campus (Brightspace) and Microsoft Teams. You must make sure that you can access these resources. You are expected to answer questions during lectures. 
+    The asynchronous teaching material will be sequences and will require you to answer quiz questions correctly. This is motivated by wanting to help you to learn and to retain the material better (and hopefully enjoy learning it more). The quizzes are <span class="bg-warning">not</span> marked and can be repeated multiple times. You are also reminded that you need to comply with the Faculty of Engineering rule of minimum attendance of 80% of lectures (see the marking scheme below).    
+    </p>
+    <hr>
+    <h4>Recommended Textbooks and Resources</h4>
+    <ul>
+	<li> Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire, Real-Time Rendering, A K Peters/CRC Press, 4th ed., 2018. List price US $ 110.00
+	<br>
+	This is an advanced text on real-time rendering approaches including good coverage of the fundamentals. The has a <a href="http://www.realtimerendering.com/">website</a> with an extensive set of links and is often updated.
+	</li>
+	<li>
+	Steve Marschner and Peter Shirley, Fundamentals of Computer Graphics, 5th ed., A.K. Peters/CRC Press, 2021. List price US $ 150.00 <br>
+	The book has a <a href="http://www.cs.cornell.edu/~srm/fcg4/">website</a> with links to a lot of related material including other schools using the text.  
+	</li>
+	<li>  
+  Farhad Ghayour and Diego Cantor, Real-Time 3D Graphics with WebGL 2, 2nd ed., Packt Publishing, 2018. List price CAD $ 61.99 <br>
+  A hands-on book with examples available on 
+  <a href="https://github.com/packtpublishing/real-time-3d-graphics-with-webgl-2"> github</a>. 
+	</li>
+	 <li>Jos Dirksen, Learn Three.js – Programming 3D animations and visualizations for the web with HTML5 and WebGL, 4th ed., Packt Publishing, 2023. List price CAD $ 69.99 <br>
+   A gentle introduction to the Three.js API to WebGL. We will be using Three.js for the first labs and some of the lectures. Jos Dirksen's  <a href="https://github.com/josdirksen/">github account</a> has a lot of examples. The official <a href="https://threejs.org/">Three.js</a> has many links. 
+	</li>
+	<li>
+	Dan Ginsburg, Budirijanto Purnomo, Dave Shreiner and Aaftab Munshi, OpenGL ES 3.0 Programming Guide, 2nd Ed., Addison-Wesley Professional, 2014. List price US $ 47.99 <br>
+	This is the programming guide tailored to OpenGL ES 3.0. OpenGL ES 3.0 is the mobile version of the API but also runs on the desktop. OpenGL ES 3.0 is also the basis for WebGL 2.0. See the accompanying <a href="http://opengles-book.com/samplecode.html">website</a>.
+	</li>
+	<li>
+	Kouichi Matsuda and Rodger Lea, WebGL Programming Guide: Interactive 3D Graphics Programming with WebGL, Addison-Wesley Professional, 2013. Digital List Price US $47.99 <br>
+	This is the programming guide tailored to WebGL 1.0. WebGL 1.0 is based on OpenGL ES 2.0 and feels a bit dated now but it is still commonly used. See the accompanying <a href="https://sites.google.com/site/webglbook/">website</a>. WebGL 2.0 is available as a <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">specification</a> and is based on OpenGL ES 3.0. We will be using WebGL 2.0.
+	</li>
+  <!-- <li> Graham Sellers, Richard Wright, Jr. and Nicholas Haemel, OpenGL SuperBible: Comprehensive Tutorial and Reference, 7th ed., Addison-Wesley, 2015. <br>
+	This is an excellent tutorial book on OpenGL desktop version which covers information of some of the labs as well as more advanced material. Programming examples are available from its' <a href="http://www.openglsuperbible.com/"> website</a>. 
+	</li> -->
+	</ul>
+<hr>
+<h4>Course Topics and Readings</H4>
+<p>Course notes will be made available
+through Virtual Campus(BrightSpace), see a tentative <A HREF="CSI4130/topics.html">list</A> of
+topics with relevant chapters of the textbook. 
+</p>
+</div>
+</div>
+
+<a class=anchor id="evaluation"></a>
+<div class="container shadow bg-light p-3 mb-4 rounded">
+  <div class="container">    
+    <h3>Student Evaluation</h3>
+    <p>Student evaluation will be based on a final exam as well as an on-line midterm and three programming assignments and a final assignment including mandatory in-class and in-lab presentations. In addition, peer evaluation will be used for grading the ability to understand graphics projects. For scheduling, please see BrightSpace.
+    </p>
+    <h4>Marking Scheme</h4>
+    <p>The maximum is 100 marks*) with the following breakdown: </p>
+    <table class="table table-striped">
+      <tbody>
+      <tr>
+          <td>Peer review</td>
+          <td>10 marks</td>
+      </tr>
+      <tr>
+          <td>Assignments (3) (incl. in-lab demonstration)</td>
+     <td>10 + 10 + 10 = 30 marks</td>
+      </tr>
+    <tr>
+          <td>Final Assignment (incl. in-class presentation, groups of 4)</td>
+	  <td>20 marks</td>
+	</tr>
+	<tr>
+          <td>On-line midterm quiz</td>
+          <td>10 marks</td>
+	</tr>
+	<tr>
+          <td>Final exam</td>
+	  <td>30 marks</td>
+	</tr>
+      </tbody>
+    </table>
+    <p>Except in programs and courses for which language is a requirement, all students have the right to produce their written work and to answer examination questions in the official language of their choice, regardless of the course’s language of instruction.</p>
+    <hr>
+    <h4>Midterm</h4> 
+    <p>
+    The midterm is scheduled to take place during class time on Virtual Campus
+    <p><span class="bg-primary text-white">Wednesday, February 11th, 2026, 8:30-9:50</span>
+	</p>
+    <p><span class="bg-danger text-white">Note: The final exam mark will not overwrite the midterm mark(s).</span></p>
+    <p> Attendance at the midterm exam is mandatory.  
+      Absence from the midterm on medical grounds or due to exceptional personal circumstances, 
+      must be reported by submitting the online Declaration of Absence from an Examination form 
+      within the <span class="bg-warning">three (3)</span> following working days of the examination.
+      A student with a justified absence during the midterm will have the final scaled accordingly. 
+      In this case, the student may not receive 25% of their final grade by the drop date.
+    </p>
+    <hr>
+    <h4>Reminder: Academic Regulations</h4>
+    <p>Class attendance is mandatory. As per academic regulations,
+    students who do not attend 80% of the class may not be allowed to
+    write the final examinations.</p>
+    <p>All components of the course (i.e., 
+assignments, midterms, etc.) must be fulfilled otherwise students may receive
+an INC as a final mark (equivalent to an F). This also holds for
+a student who is taking the course for the second time.
+    </p>
+    <hr>
+	    <h4>Use of AI tools</h4>
+    <p>
+    You may find the use of AI-based tools useful for writing code in your assignments. Any code that is not your own, i.e., looked-up from a webpage with a browser or through the use of a LLM must be clearly marked in your code. You must add a comment which indicates the source and clearly mark the start and end of the section. Remember source code is covered by copyright. Please see below for regulations on submitting work that is not your own.
+    </p>
+    <hr>
+		<h4>Academic Fraud and Plagiarism</h4>
+    <p>
+    Any form of academic misconduct including on an <em>assignment</em> will be reported. If it is found that (parts of) an assignment submission is copied, it will result in an automatic zero for the assignment. The TAs and myself are using software that identifies code and text similarity automatically. 
+    </p>
+    <p>
+      For any plagiarism or fraud the university <a
+          href="https://www.uottawa.ca/about-us/leadership-governance/policies-regulations/a-4-academic-integrity-academic-misconduct">regulation
+          on academic integrity and misconduct</a> applies. A website explains the rules surrounding <a
+          href="https://www.uottawa.ca/study/academic-integrity">academic
+          integrity</a> and the use of AI. Please familiarize yourself with them.
+    </p>
+	<hr>
+
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center bg-secondary text-white p-3">
+<p class="small"><i class="fa fa-copyright"></i> Jochen Lang</p>
+<p class="small">These individual webpages are only for information purposes, consult the official University of Ottawa sources regarding any academic rules or regulations. I am not responsible and I do not assume any liability whatsoever for any of the linked websites, interpretation, comments or opinions expressed in any of the linked websites.</p>
+</footer>
+
+</body>
+</html>
