@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jochen Lang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+  padding-top: 160px;
+}
+.navbar {
+  margin-bottom: 20px;
+}
+p.max-text-width {
+    max-width: 640px;
+}
+.navbar-second {
+    margin-top: 70px;
+    z-index: 1000;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+}
+
+</style>
+<body>
+ 
+<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="index.html">
+    <img src="../img/jochen.png" alt="Logo" style="width:40px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleMainNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <!-- Navbar Links -->
+  <div class="collapse navbar-collapse" id="collapsibleMainNavbar">
+  <ul class="navbar-nav mx-auto navbar-dark">
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="../index.html">Home
+      </a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="https://uniweb.uottawa.ca/members/206">Short CV</a>
+    </li>
+    <li class="nav-item dropdown px-lg-4">
+      <a class="nav-link dropdown-toggle text-uppercase text-expanded" id="navbardrop" data-toggle="dropdown">Teaching
+      </a>
+      <div class="dropdown-menu">
+	<a class="dropdown-item" href="teaching.html">Overview</a>
+        <a class="dropdown-item" href="../csi4130.html">CSI4130</a>
+       <a class="dropdown-item" href="../csi5341.html">CSI5341</a>
+  </div>
+    </li>
+    <li class="nav-item active dropdown px-lg-4">
+      <a class="nav-link dropdown-toggle text-uppercase text-expanded" id="navbardrop" data-toggle="dropdown">CSI Graduate Programs (internal)
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="../mcsprojects/postings.html">CSI6900 MCS Project Links</a>
+ 	      <a class="dropdown-item" href="../procedures/csi9901_02.pdf">CSI9901/9902 Seminars</a>
+        <a class="dropdown-item" href="../procedures/csi9998.pdf">CSI9998 Comprehensive</a>
+        <a class="dropdown-item" href="../procedures/csi9997.pdf">CSI9997 Proposal</a>
+      </div>
+    </li>
+      <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="../research.html">Research</a>
+    </li>		
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="https://scholar.google.ca/citations?user=jXwPkbcAAAAJ&hl=en">Publications</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-second fixed-top navbar-expand-sm bg-light navbar-light">
+  <a class="navbar-brand" href="#">Student Projects</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsiblePageNavbar"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="collapsiblePageNavbar">
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item px-lg-4">
+      <a class="nav-link" href="#current">Current Projects</a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link" href="#other">Other Projects</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+
+<a class=anchor id="current"></a>
+<div class="container bg-primary p-md-3 mb-4 rounded">
+  <div class="container ">
+    <h3 class="text-white">Current Open Honours and MCS Research Projects</h3> 
+    <div class="card-deck">
+      <div class="card"> 
+	<h4 class="card-title">Feedforward 3D Gaussian Splatting from Video
+</h4>
+	<h6 class="card-title">
+	  Description</h6>
+	<div class="card-body">
+	  <p class="card-text">
+      3D Gaussian splatting is quickly being adapted as representation for scene and motion capture for novel view rendering. The original formulation by Kerbl et al. and much of the early work uses a per-scene optimization including dedicated camera calibration, which while effective leads to high compute cost and lengthy processing. Based on the success of forward models for structure-from-motion, such as the Visual Geometry Grounded Transformer by , feed-forward models for 3DGS are increasing being developed. This project is to build on a feed-forward 3DGS pipeline recently developed. The task involve analyzing and improvement of the current training pipeline. This process will involve designing a training configuration for effective data usage based on 3D computer vision principles, effective latent representation for reducing errors (such as 3DGS floaters) and modifying neural network layers for efficiency on long video sequence.
+      </p>
+     <h6 class="card-title">Expected Results: Efficient 3DGS capture pipeline with reduced noise and long videos.
+</h6>
+    <h6 class="card-title">Learning Outcomes: Familiarization with 3D vision and graphics concepts, working knowledge on vision transformers, training on experimental design and interpreting results.
+</h6> 
+    <h6 class="card-title">Suitability: CSI6900 or CSI4900.</h6>
+</div>
+    <h6 class="card-title">References: </h6>
+</div>
+      </div>
+      <div class="card md-5">
+<h4 class="card-title">Failures of Optical Flow Methods
+</h4>
+	<h6 class="card-title">
+	  Description</h6>
+	<div class="card-body">
+	  <p class="card-text">
+      Optical flow has been defined as the apparent motion of brightness pattern bin the image y Horn and Schunk in 1980. Optical flow encodes scene and observer motions and hence has remained an important visual input to autonomous system and robotics. Deep learning has improved the estimation of optical flow dramatically and foundation models have been proposed in computer vision. However, as has been shown recently, even modern deep learning methods can fail dramatically when faced with unexpected input. It was also found that shape changes in the objects have higher potential impact then texture modifications. This project will investigate if foundation models provide increased robustness to shape and texture attacks over recent deep learning architecture. Failures and safety are important questions considering the use of optical flow in robotic platforms.
+  </p>
+     <h6 class="card-title">Expected Results: Identifying failures based on a comparative evaluation of recent deep learning approaches and foundation models.
+</h6>
+    <h6 class="card-title">Learning Outcomes: Familiarization with computer vision concepts, working knowledge on vision transformers, sequence modeling and deep learning in PyTorch, training on experimental design and interpreting results.
+</h6> 
+    <h6 class="card-title">Suitability: CSI6900 or CSI4900.</h6>
+</div>
+    <h6 class="card-title">References: </h6>
+</div>      
+      <div class="card md-5">
+<h4 class="card-title">Novel View Synthesis of Fine Detail
+</h4>
+	<h6 class="card-title">
+	  Description</h6>
+	<div class="card-body">
+	  <p class="card-text">
+      3D Gaussian splatting is quickly being adapted as representation for scene and motion capture for novel view rendering. The representation of fine detail such as hair strands is however challenging as the Gaussians density representation does not permit sharp drop offs, e.g., at edges of the fine detail. Fine detail is important in many applications including human motion capture in animation but also for many biological artifacts including animals, e.g., fur or whiskers, plant close-ups, etc. Gaussians can be "sharpened" in various way including alignment along contours, using opacity function or overlapping multiple representations. This project will investigate hair models such as and apply them to non-hair objects.
+  </p>
+     <h6 class="card-title">Expected Results: Benchmark dataset, automated scripting for scene generation, evaluation results for comparison of deep learning methods.
+    </h6>
+    <h6 class="card-title">Learning Outcomes: Familiarization with 3D computer graphics and animation, insights into 3D Gaussian splatting, training on experimental design and interpreting results.
+</h6> 
+    <h6 class="card-title">Suitability: CSI6900 or CSI4900.</h6>
+</div>
+    <h6 class="card-title">References: </h6>
+</div>      
+      <div class="card md-5">
+<h4 class="card-title">Simulation of Dynamic Scenes for Deep Learning
+</h4>
+	<h6 class="card-title">
+	  Description</h6>
+	<div class="card-body">
+	  <p class="card-text">
+      This is a computer graphics project bridging traditional mesh-based rendering with the help of Blender and the classical multi-physics simulator Bullet with emerging learning-based computer graphics. The task is to create versatile scripts for dynamic scene rendering and extending a recent benchmark dataset. The scenes will be organized by motion scenarios enabling fine-grained benchmarking and identify limitations of existing methods. These methods need to be applied to the scenes created for the benchmark.
+  </p>
+     <h6 class="card-title">Expected Results: Benchmark dataset, automated scripting for scene generation, evaluation results for comparison of deep learning methods.
+    </h6>
+    <h6 class="card-title">Learning Outcomes: Familiarization with 3D computer graphics, working knowledge on various deep learning methods, training on experimental design and interpreting results.
+
+</h6> 
+    <h6 class="card-title">Suitability: CSI6900 or CSI4900.</h6>
+</div>
+    <h6 class="card-title">References: </h6>
+</div>      
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<a class=anchor id="other"></a>
+<div class="container bg-secondary shadow p-md-3 mb-4 rounded">
+  <div class="container">
+      <h3 class="text-white">Other Projects</h3>
+	  <p class="small text-white">Please contact me directly for other projects.<h4 class="text-white">Please contact me for PhD and MCS thesis supervision.</h4>
+  </div>
+</div>
+
+<footer class="container-fluid text-center bg-secondary text-white p-3">
+<p class="small"><i class="fa fa-copyright"></i> Jochen Lang</p>
+<p class="small">These individual webpages are only for information purposes, consult the official University of Ottawa sources regarding any academic rules or regulations. I am not responsible  and I do not assume any liability whatsoever for any of the linked websites, interpretation, comments or opinions expressed in any of the linked websites.</p>
+</footer>
+
+</body>
+</html>

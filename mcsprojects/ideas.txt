@@ -1,0 +1,53 @@
+Project: Feedforward 3D Gaussian Splatting from Video
+
+Summary: 3D Gaussian splatting is quickly being adapted as representation for scene and motion capture for novel view rendering. The original formulation by Kerbl et al. and much of the early work uses a per-scene optimization including dedicated camera calibration, which while effective leads to high compute cost and lengthy processing. Based on the success of forward models for structure-from-motion, such as the Visual Geometry Grounded Transformer by , feed-forward models for 3DGS are increasing being developed. This project is to build on a feed-forward 3DGS pipeline recently developed. The task involve analyzing and improvement of the current training pipeline. This process will involve designing a training configuration for effective data usage based on 3D computer vision principles, effective latent representation for reducing errors (such as 3DGS floaters) and modifying neural network layers for efficiency on long video sequence.     
+
+Expected Results: Efficient 3DGS capture pipeline with reduced noise and long videos.
+
+Learning Outcomes: Familiarization with 3D vision and graphics concepts, working knowledge on vision transformers, training on experimental design and interpreting results.
+
+Suitability: CSI6900 or CSI4900.
+
+References:
+
+
+ 
+Project: Failures of Optical Flow Methods
+
+Summary: Optical flow has been defined as the apparent motion of brightness pattern bin the image y Horn and Schunk in 1980. Optical flow encodes scene and observer motions and hence has remained an important visual input to autonomous system and robotics. Deep learning has improved the estimation of optical flow dramatically and foundation models have been proposed in computer vision. However, as has been shown recently, even modern deep learning methods can fail dramatically when faced with unexpected input. It was also found that shape changes in the objects have higher potential impact then texture modifications. This project will investigate if foundation models provide increased robustness to shape and texture attacks over recent deep learning architecture. Failures and safety are important questions considering the use of optical flow in robotic platforms.  
+
+Expected Results: Identifying failures based on a comparative evaluation of recent deep learning approaches and foundation models.
+
+Learning Outcomes: Familiarization with computer vision concepts, working knowledge on vision transformers, sequence modeling and deep learning in PyTorch, training on experimental design and interpreting results.
+
+Suitability: CSI6900 or CSI4900.
+ 
+References:
+
+
+Project: Novel View Synthesis of Fine Detail
+
+Summary: 3D Gaussian splatting is quickly being adapted as representation for scene and motion capture for novel view rendering. The representation of fine detail such as hair strands is however challenging as the Gaussians density representation does not permit sharp drop offs, e.g., at edges of the fine detail. Fine detail is important in many applications including human motion capture in animation but also for many biological artifacts including animals, e.g., fur or whiskers, plant close-ups, etc. Gaussians can be "sharpened" in various way including alignment along contours, using opacity function or overlapping multiple representations. This project will investigate hair models such as and apply them to non-hair objects.
+
+Expected Results: Benchmark dataset, automated scripting for scene generation, evaluation results for comparison of deep learning methods.
+
+Learning Outcomes: Familiarization with 3D computer graphics and animation, insights into 3D Gaussian splatting, training on experimental design and interpreting results.
+
+Suitability: CSI6900 or CSI4900.
+ 
+References:
+
+
+
+Project: Simulation of Dynamic Scenes for Deep Learning
+
+Summary: This is a computer graphics project bridging traditional mesh-based rendering with the help of Blender and the classical multi-physics simulator Bullet with emerging learning-based computer graphics. The task is to create versatile scripts for dynamic scene rendering and extending a recent benchmark dataset. The scenes will be organized by motion scenarios enabling fine-grained benchmarking and identify limitations of existing methods. These methods need to be applied to the scenes created for the benchmark.
+   
+Expected Results: Benchmark dataset, automated scripting for scene generation, evaluation results for comparison of deep learning methods.
+
+Learning Outcomes: Familiarization with 3D computer graphics, working knowledge on various deep learning methods, training on experimental design and interpreting results.
+
+Suitability: CSI6900 or CSI4900.
+ 
+References:
+   
